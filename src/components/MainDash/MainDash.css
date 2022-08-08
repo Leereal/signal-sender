@@ -1,0 +1,26 @@
+.MainDash {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.MainDash > h1,
+h2 {
+  color: var(--green);
+  text-align: center;
+}
+
+@media screen and (max-width: 1400px) {
+  .MainDash {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  h1 {
+    font-size: 25px;
+  }
+}
+

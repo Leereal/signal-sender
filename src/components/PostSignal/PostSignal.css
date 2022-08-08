@@ -1,0 +1,15 @@
+.PostSignalModal {
+  display: flex;
+  flex-direction: column;
+}
+.PostSignalModalBox {
+}
+.inputRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.Post {
+  align-items: center;
+  justify-content: center;
+}

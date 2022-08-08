@@ -1,0 +1,133 @@
+.CompactCard {
+  display: flex;
+  flex: 1;
+  height: 7rem !important;
+  border-radius: 0.7rem;
+  color: rgb(255, 255, 255);
+  position: relative;
+  cursor: pointer;
+  background-color: var(--gold);
+  padding: 1rem;
+
+  /* background: linear-gradient(180deg, #bb67ff 0%, #c484f3 100%); */
+  box-shadow: 0px 10px 20px 0px #47773994;
+}
+
+.CompactCard:hover {
+  box-shadow: none !important;
+}
+
+/* currency image  */
+.currencyImage {
+  width: 60px;
+  border-radius: 7px;
+}
+
+.signalStatus {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.4rem;
+}
+
+.detail {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.signalStatus > span:nth-child(1) {
+  /*Symbol*/
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.signalStatus > span:nth-child(2), /*Entry and SL*/
+.signalStatus > span:nth-child(3) {
+  font-size: 13px;
+  font-weight: bold;
+  color: rgb(182, 224, 217);
+}
+.signalStatus > span:nth-child(4) {
+  /*Time*/
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.takeProfit {
+  font-size: 10px;
+  font-weight: bold;
+  color: rgb(182, 224, 217);
+}
+.comIcons {
+  display: flex;
+  gap: 0.9rem;
+  /* justify-content: space-between; */
+}
+
+/* Expanded Card */
+.ExpandedCard {
+  background: var(--gray);
+  box-shadow: 0px 10px 20px 0px #47773994;
+  position: absolute;
+  top: 20%;
+  margin-left: 91px;
+  width: 50%;
+  height: 50%;
+  z-index: 9;
+  left: 13rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  /* transform: translate(50%, 50%); */
+}
+
+/* Currency name  */
+.ExpandedCard > span:nth-of-type(1) {
+  color: aliceblue;
+  font-size: 26px;
+  font-weight: bold;
+  text-shadow: 0px 0px 15px white;
+}
+/* Time ago */
+.ExpandedCard > span:nth-of-type(2) {
+  color: rgb(219, 203, 181);
+  font-size: 26px;
+}
+.signalContainer {
+  width: 70%;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(127, 214, 138);
+  margin-bottom: 10px;
+}
+.row > span:nth-child(1) {
+  font-size: 17px;
+}
+.row > span:nth-child(2) {
+  font-size: 15px;
+  font-weight: 600;
+}
+@media screen and (max-width: 540px) {
+  .CompactCard {
+    width: 80%;
+  }
+  .currencyImage {
+    width: 50px;
+    border-radius: 5px;
+  }
+
+  .signalStatus > span:nth-child(1) {
+    /*Symbol*/
+    font-size: 17px;
+  }
+}

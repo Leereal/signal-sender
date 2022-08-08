@@ -1,0 +1,51 @@
+.Sidebar {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* padding-top: 2rem; */
+  transition: 300ms ease;
+  align-items: center;
+
+}
+.logo {
+  margin-top: 2.3rem;
+  display: flex;
+  /* width: 7rem;
+  height: 7rem; */
+  margin-left: 2.3rem;
+}
+.logo img {
+  width: 100%;
+}
+.LoginButton {
+  display: flex;
+  justify-content: center;
+  margin-top: 7px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+  .LoginButton {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .Sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    /* width: 14rem;
+    height: 14rem; */
+    width: 70%;
+    margin-left: 1rem;
+    margin-bottom: 25px;
+    margin-top: 10px;
+  }
+  .logo img {
+    width: 100%;
+  }
+}
